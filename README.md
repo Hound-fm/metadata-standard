@@ -168,4 +168,4 @@ If the nested metadata has an invalid syntax, format or structure or does not pr
 
 > Schema.org is a collaborative, community activity with a mission to create, maintain, and promote schemas for structured data on the Internet, on web pages, in email messages, and beyond. 
 
-If the nested micro data represents an entity, is recommended to use one of the availble [schemas]( https://schema.org/docs/schemas.html) on shcema.org
+If the nested micro data represents an entity, is recommended to use one of the available [schemas]( https://schema.org/docs/schemas.html) on schema.org
