@@ -130,12 +130,13 @@ Legacy strings are supported for compatibility with old metadata published and t
 ### Extending the metadata
 
 Some types of content require very specific metadata information wich is not provided in the current metadata schema.
-Since most platforms interpret the `description` field as markdown, it is possible to include nested metadata within this field using yaml front matter:
+Since most platforms interpret the `description` field as markdown, it is possible to include nested metadata within this field using `yaml` or `json` front matter:
 
-> Front matter is metadata written in yaml, located at the top of a file wrapped in ---'s.
+> Front matter is metadata located at the top of the markdown file.
 
-Front matter example:
+Front matter examples:
 
+YAML
 ``` YML
 ---
 key: value
@@ -143,6 +144,14 @@ key: value
 
 Additional content ( usually as markdown format )...
 ```
+
+JSON
+``` YML
+{ key: value }
+
+Additional content ( usually as markdown format )...
+```
+
 
 The nested metadata included on the yaml block should be very minimal and only used if the current metadata fileds don't provide enough information.
 
@@ -152,5 +161,11 @@ Nested metadata values should only include common data types such as string or n
 
 If the nested metadata has an invalid syntax, format or structure or does not provide any relevant information it should be ignored.
 
-| :warning: | Software or applications should always use the safe-yaml parser and have a clear predefined schema to validate the nested metadata before any other process or interaction with it.
+| :warning: | Software or applications should use a clear predefined schema to validate the nested metadata before any other process or interaction with it. See https://schema.org/ to learn more about the prefered schemas.
 |---|:---|
+
+### Schema.org
+
+> Schema.org is a collaborative, community activity with a mission to create, maintain, and promote schemas for structured data on the Internet, on web pages, in email messages, and beyond. 
+
+If the nested micro data represents an entity, is recommended to use one of the availble [schemas]( https://schema.org/docs/schemas.html) on shcema.org
