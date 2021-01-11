@@ -161,11 +161,11 @@ Nested metadata values should only include common data types such as string or n
 
 If the nested metadata has an invalid syntax, format or structure or does not provide any relevant information it should be ignored.
 
-| :warning: | Software or applications should use a clear predefined schema to validate the nested metadata before any other process or interaction with it. See https://schema.org/ to learn more about the prefered schemas.
-|---|:---|
-
 ### Schema.org
 
 > Schema.org is a collaborative, community activity with a mission to create, maintain, and promote schemas for structured data on the Internet, on web pages, in email messages, and beyond. 
 
-If the nested micro data represents an entity, is recommended to use one of the available [schemas]( https://schema.org/docs/schemas.html) on schema.org
+https://schema.org/
+
+Software or applications should use a clear predefined schema to validate the nested metadata before any other process or interaction with it. Schema.org provides the prefered structured data schemas to use for extending the claim metadata. See list of available [schemas]( https://schema.org/docs/schemas.html)
+ 
